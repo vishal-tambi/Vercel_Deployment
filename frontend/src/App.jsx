@@ -10,7 +10,7 @@ function App() {
 axios.defaults.withCredentials = true;
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('https://vercel-deployment-weld-delta.vercel.app', {name, email, password})
+    axios.post('https://vercel-deployment-api.vercel.app', {name, email, password})
     .then(result => console.log(result))
     .catch(err => console.log('not conenct to db',err))
   }
