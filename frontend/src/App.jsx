@@ -12,7 +12,7 @@ axios.defaults.withCredentials = true;
     e.preventDefault();
     axios.post('https://vercel-deployment-weld-delta.vercel.app', {name, email, password})
     .then(result => console.log(result))
-    .catch(err => console.log(err))
+    .catch(err => console.log('not conenct to db',err))
   }
   return (
     <div className="d-flex justify-content-center align-items-center bg-primary vh-100">
